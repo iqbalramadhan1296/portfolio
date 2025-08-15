@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+  background: #fafafa;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  text-align: center;
+  padding: 2em 0;
+  background: #fff;
+}
+
+main {
+  max-width: 600px;
+  margin: 2em auto;
+  background: #fff;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+h1, h2 {
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 1.2em;
+}
