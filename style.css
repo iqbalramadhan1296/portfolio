@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Iqbal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
 body {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
