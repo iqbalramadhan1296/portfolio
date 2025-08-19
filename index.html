@@ -21,7 +21,7 @@
     </nav>
   </header>
 
-  <!-- Hero / Intro -->
+  <!-- Hero -->
   <section id="hero">
     <h2>Hi, I’m Iqbal</h2>
     <p>A researcher passionate about politics, public policy, market, and communications.</p>
@@ -39,62 +39,84 @@
 
     <!-- Thesis -->
     <article class="research-item">
-      <h3>Explaining Democratic Backsliding in Indonesia (2019–2024): Structural Conditions and Power Consolidation under Joko Widodo</h3>
+      <h3>Explaining Democratic Backsliding in Indonesia (2019–2024)</h3>
       <h5><i>Master’s Thesis, International University of Japan, 2025</i></h5>
-      <ul>
-        <li>Analysed the causes of democratic backsliding in Indonesia using a structural approach and a case study of Joko Widodo's presidency.</li>
-        <li>Methodology: Qualitative analysis, literature review, and in-depth interviews.</li>
-        <li>Findings: Identified three key factors: institutional weakening, executive power consolidation, and opposition/ally’s co-optation.</li>
-      </ul>
+      <div class="research-content">
+        <ul>
+          <li>Analysed democratic backsliding in Indonesia using a structural approach.</li>
+          <li>Methodology: Qualitative analysis, literature review, and in-depth interviews.</li>
+          <li>Findings: Institutional weakening, executive power consolidation, and opposition/ally’s co-optation.</li>
+        </ul>
+      </div>
+      <button class="toggle-btn">View More</button>
     </article>
 
-    <!-- Surveys / Projects -->
+    <!-- Survey 1 -->
     <article class="research-item">
       <h3>Survey on Political Dynamics in Depok ahead of the 2024 Election</h3>
       <h5><i>Freelance, 2023</i></h5>
-      <ul>
-        <li>Conducted a survey on local political dynamics in Depok for candidates running for the Depok City Regional House of Representatives (DPRD).</li>
-        <li>Methodology: Online survey and focus group discussion.</li>
-      </ul>
+      <div class="research-content">
+        <ul>
+          <li>Surveyed local political dynamics for DPRD candidates in Depok.</li>
+          <li>Methodology: Online survey and focus group discussion.</li>
+        </ul>
+      </div>
+      <button class="toggle-btn">View More</button>
     </article>
 
+    <!-- Survey 2 -->
     <article class="research-item">
-      <h3>Market Survey on Toothpaste Usage Patterns in the Five Largest Cities in Indonesia</h3>
+      <h3>Market Survey on Toothpaste Usage Patterns</h3>
       <h5><i>KedaiKOPI Research Agency, 2021</i></h5>
-      <ul>
-        <li>Survey on toothpaste usage patterns in five major cities in Indonesia to support a toothpaste company in launching a new product.</li>
-        <li>Methodology: Face-to-face survey.</li>
-      </ul>
+      <div class="research-content">
+        <ul>
+          <li>Survey on toothpaste usage patterns in five major Indonesian cities.</li>
+          <li>Methodology: Face-to-face survey.</li>
+        </ul>
+      </div>
+      <button class="toggle-btn">View More</button>
     </article>
 
+    <!-- Survey 3 -->
     <article class="research-item">
-      <h3>Survey on Stunting Prevention Communication in the Seven Most Severely Affected Regions</h3>
+      <h3>Survey on Stunting Prevention Communication</h3>
       <h5><i>KedaiKOPI Research Agency, 2021</i></h5>
-      <ul>
-        <li>Public communication survey on stunting prevention in the seven regions with the most severe stunting cases in Indonesia.</li>
-        <li>Methodology: Face-to-face survey and focus group discussion.</li>
-        <li>Findings: Lack of awareness regarding when stunting can be prevented and when it is irreversible was the main cause behind high cases.</li>
-      </ul>
+      <div class="research-content">
+        <ul>
+          <li>Survey on stunting prevention in seven severely affected regions.</li>
+          <li>Methodology: Face-to-face survey and focus group discussion.</li>
+          <li>Findings: Low awareness of stunting prevention timeline was the main cause of high cases.</li>
+        </ul>
+      </div>
+      <button class="toggle-btn">View More</button>
     </article>
 
+    <!-- Survey 4 -->
     <article class="research-item">
-      <h3>Survey and Focus Group Discussions on Political Dynamics Ahead of the 2024 Election in Java and Madura</h3>
+      <h3>Survey & FGDs on Political Dynamics in Java & Madura</h3>
       <h5><i>KedaiKOPI Research Agency, 2021</i></h5>
-      <ul>
-        <li>Public opinion survey and FGD with experts from each electoral district in Java and Madura about political dynamics leading to the 2024 elections.</li>
-        <li>Methodology: Face-to-face survey and focus group discussion.</li>
-        <li>Findings: Urban areas emphasised government service improvements, while rural areas highlighted better living standards.</li>
-      </ul>
+      <div class="research-content">
+        <ul>
+          <li>Public opinion survey and FGDs with experts in Java and Madura electoral districts.</li>
+          <li>Methodology: Face-to-face survey and FGD.</li>
+          <li>Findings: Urban areas focus on service quality, rural areas on better living standards.</li>
+        </ul>
+      </div>
+      <button class="toggle-btn">View More</button>
     </article>
 
+    <!-- Survey 5 -->
     <article class="research-item">
       <h3>National Survey on the Relocation of the Capital to Kalimantan</h3>
       <h5><i>KedaiKOPI Research Agency, 2019</i></h5>
-      <ul>
-        <li>Analysed public opinion nationwide about President Joko Widodo’s plan to relocate the capital from Jakarta to East Kalimantan Province.</li>
-        <li>Methodology: Face-to-face interviews.</li>
-        <li>Findings: 39.8% disapproved, 35.6% approved, 24.6% had no opinion. 95.7% of respondents from Jakarta strongly disapproved.</li>
-      </ul>
+      <div class="research-content">
+        <ul>
+          <li>Survey on public opinion about relocating the capital to East Kalimantan.</li>
+          <li>Methodology: Face-to-face interviews.</li>
+          <li>Findings: 39.8% disapproved, 35.6% approved, 24.6% no opinion. In Jakarta, 95.7% disapproved.</li>
+        </ul>
+      </div>
+      <button class="toggle-btn">View More</button>
     </article>
   </section>
 
@@ -119,5 +141,16 @@
   <footer>
     <p>&copy; 2025 Iqbal. All rights reserved.</p>
   </footer>
+
+  <!-- Script for accordion -->
+  <script>
+    document.querySelectorAll(".toggle-btn").forEach(button => {
+      button.addEventListener("click", () => {
+        const content = button.previousElementSibling;
+        content.classList.toggle("show");
+        button.textContent = content.classList.contains("show") ? "View Less" : "View More";
+      });
+    });
+  </script>
 </body>
 </html>
