@@ -1,77 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Iqbal Portfolio</title>
-  <!-- Panggil CSS -->
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iqbal Ramadhan – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body> 
   <!-- Navbar -->
   <header>
     <nav>
-      <h1>Iqbal Ramadhan</h1>
+      <h1>Iqbal</h1>
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Research</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#research">Research</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Hero / Intro -->
+  <section id="hero">
+    <h2>Hi, I’m Iqbal</h2>
+    <p>A researcher passionate about politics, public policy, market, and communications.</p>
+  </section>
+
   <!-- About -->
   <section id="about">
     <h2>About Me</h2>
-    <p>My name is Iqbal Ramadhan. I am an experienced researcher and writer with over three years of expertise in politics, public policy, and communications.</p>
+    <p>My name is Iqbal Ramadhan. I am an experienced researcher and writer with over three years of expertise in politics, public policy, and communications. My work spans qualitative research and policy analysis for government agencies, political figures, and private companies. I have provided political consulting for local election candidates and led communication strategies across diverse stakeholders.</p>
   </section>
 
-   <!-- Research -->
-<section id="research">
-  <h2>Research</h2>
-  <h3>Explaining Democratic Backsliding in Indonesia (2019–2024): Structural Conditions and Power Consolidation under Joko Widodo</h3>
-  <h5><i>Master’s Thesis, International University of Japan, 2025</i></h5>
-  
-  <!-- bagian ringkas -->
-  <ul>
-    <li>Analysed the causes of democratic backsliding in Indonesia using a structural approach.</li>
-  </ul>
-  <!-- bagian tersembunyi -->
-  <div id="more-research" style="display: none;">
-    <ul>
-      <li>Methodology: Qualitative analysis, literature review, and in-depth interviews.</li>
-      <li>Findings: Identified three key factors: institutional weakening, executive power consolidation, and opposition/ally’s co-optation.</li>
-    </ul>
-  </div>
+  <!-- Research -->
+  <section id="research">
+    <h2>Research</h2>
 
-  <!-- tombol -->
-  <button id="toggle-btn">View More</button>
-</section>
+    <!-- Thesis -->
+    <article class="research-item">
+      <h3>Explaining Democratic Backsliding in Indonesia (2019–2024): Structural Conditions and Power Consolidation under Joko Widodo</h3>
+      <h5><i>Master’s Thesis, International University of Japan, 2025</i></h5>
+      <ul>
+        <li>Analysed the causes of democratic backsliding in Indonesia using a structural approach and a case study of Joko Widodo's presidency.</li>
+        <li>Methodology: Qualitative analysis, literature review, and in-depth interviews.</li>
+        <li>Findings: Identified three key factors: institutional weakening, executive power consolidation, and opposition/ally’s co-optation.</li>
+      </ul>
+    </article>
 
-<script>
-  const btn = document.getElementById("toggle-btn");
-  const more = document.getElementById("more-research");
+    <!-- Surveys / Projects -->
+    <article class="research-item">
+      <h3>Survey on Political Dynamics in Depok ahead of the 2024 Election</h3>
+      <h5><i>Freelance, 2023</i></h5>
+      <ul>
+        <li>Conducted a survey on local political dynamics in Depok for candidates running for the Depok City Regional House of Representatives (DPRD).</li>
+        <li>Methodology: Online survey and focus group discussion.</li>
+      </ul>
+    </article>
 
-  btn.addEventListener("click", () => {
-    if (more.style.display === "none") {
-      more.style.display = "block";
-      btn.textContent = "View Less";
-    } else {
-      more.style.display = "none";
-      btn.textContent = "View More";
-    }
-  });
-</script>
+    <article class="research-item">
+      <h3>Market Survey on Toothpaste Usage Patterns in the Five Largest Cities in Indonesia</h3>
+      <h5><i>KedaiKOPI Research Agency, 2021</i></h5>
+      <ul>
+        <li>Survey on toothpaste usage patterns in five major cities in Indonesia to support a toothpaste company in launching a new product.</li>
+        <li>Methodology: Face-to-face survey.</li>
+      </ul>
+    </article>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-      <h3>Judul Proyek</h3>
-      <p>Deskripsi singkat proyek.</p>
-      <a href="#">View More</a>
-    </div>
+    <article class="research-item">
+      <h3>Survey on Stunting Prevention Communication in the Seven Most Severely Affected Regions</h3>
+      <h5><i>KedaiKOPI Research Agency, 2021</i></h5>
+      <ul>
+        <li>Public communication survey on stunting prevention in the seven regions with the most severe stunting cases in Indonesia.</li>
+        <li>Methodology: Face-to-face survey and focus group discussion.</li>
+        <li>Findings: Lack of awareness regarding when stunting can be prevented and when it is irreversible was the main cause behind high cases.</li>
+      </ul>
+    </article>
+
+    <article class="research-item">
+      <h3>Survey and Focus Group Discussions on Political Dynamics Ahead of the 2024 Election in Java and Madura</h3>
+      <h5><i>KedaiKOPI Research Agency, 2021</i></h5>
+      <ul>
+        <li>Public opinion survey and FGD with experts from each electoral district in Java and Madura about political dynamics leading to the 2024 elections.</li>
+        <li>Methodology: Face-to-face survey and focus group discussion.</li>
+        <li>Findings: Urban areas emphasised government service improvements, while rural areas highlighted better living standards.</li>
+      </ul>
+    </article>
+
+    <article class="research-item">
+      <h3>National Survey on the Relocation of the Capital to Kalimantan</h3>
+      <h5><i>KedaiKOPI Research Agency, 2019</i></h5>
+      <ul>
+        <li>Analysed public opinion nationwide about President Joko Widodo’s plan to relocate the capital from Jakarta to East Kalimantan Province.</li>
+        <li>Methodology: Face-to-face interviews.</li>
+        <li>Findings: 39.8% disapproved, 35.6% approved, 24.6% had no opinion. 95.7% of respondents from Jakarta strongly disapproved.</li>
+      </ul>
+    </article>
   </section>
 
   <!-- Skills -->
@@ -87,13 +111,13 @@
   <!-- Contact -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:iqbal@example.com">iramadhan@iuj.ac.jp</a></p>
-    <p>LinkedIn: <a href="#">linkedin.com/in/iramadhan/</a></p>
+    <p>Email: <a href="mailto:iqbal@example.com">iqbal@example.com</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/iqbal</a></p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Iqbal Ramadhan. All rights reserved.</p>
+    <p>&copy; 2025 Iqbal. All rights reserved.</p>
   </footer>
 </body>
 </html>
