@@ -80,40 +80,31 @@ section h5 {
   font-style: italic;
 }
 
-/* Project / Research cards */
-.project-card,
-#research ul {
-  border: 1px solid #e0e0e0;
-  padding: 1.5rem;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  margin-top: 1rem;
-}
-
+/* Research list */
 #research ul {
   list-style: disc;
-  padding-left: 1.2rem;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 /* Toggle button */
 button {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   padding: 0.6rem 1.2rem;
-  border: none;
+  border: 1px solid #16537e;
   border-radius: 6px;
-  background: #16537e;
-  color: #fff;
+  background: transparent;
+  color: #16537e;
   font-size: 0.95rem;
   font-weight: 500;
   cursor: pointer;
-  transition: background 0.25s ease, transform 0.15s ease;
+  transition: all 0.25s ease;
 }
 
 button:hover {
-  background: #0e3c5a;
-  transform: translateY(-2px);
+  background: #16537e;
+  color: #fff;
 }
 
 /* Footer */
