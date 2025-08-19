@@ -28,17 +28,43 @@
     <p>My name is Iqbal Ramadhan. I am an experienced researcher and writer with over three years of expertise in politics, public policy, and communications.</p>
   </section>
 
-    <!-- Research -->
-  <section id="research">
-    <h2>Research</h2>
-      <h3>Explaining Democratic Backsliding in Indonesia (2019–2024): Structural Conditions and Power Consolidation under Joko Widodo</h3>
-      <h5><i>Master’s Thesis, International University of Japan, 2025</i></h5>
-      <p> <ul>
-    <li>Analysed the causes of democratic backsliding in Indonesia using a structural approach and a case study of Joko Widodo's term as the President of Indonesia.</li>
-    <li>Methodology: Qualitative analysis, literature review, and in-depth interviews.</li>
-    <li>Findings: Identified three key factors: institutional weakening, executive power consolidation, and opposition/ally’s co-optation.</li>
+   <!-- Research -->
+<section id="research">
+  <h2>Research</h2>
+  <h3>Explaining Democratic Backsliding in Indonesia (2019–2024): Structural Conditions and Power Consolidation under Joko Widodo</h3>
+  <h5><i>Master’s Thesis, International University of Japan, 2025</i></h5>
+  
+  <!-- bagian ringkas -->
+  <ul>
+    <li>Analysed the causes of democratic backsliding in Indonesia using a structural approach.</li>
   </ul>
-  </section>
+
+  <!-- bagian tersembunyi -->
+  <div id="more-research" style="display: none;">
+    <ul>
+      <li>Methodology: Qualitative analysis, literature review, and in-depth interviews.</li>
+      <li>Findings: Identified three key factors: institutional weakening, executive power consolidation, and opposition/ally’s co-optation.</li>
+    </ul>
+  </div>
+
+  <!-- tombol -->
+  <button id="toggle-btn">View More</button>
+</section>
+
+<script>
+  const btn = document.getElementById("toggle-btn");
+  const more = document.getElementById("more-research");
+
+  btn.addEventListener("click", () => {
+    if (more.style.display === "none") {
+      more.style.display = "block";
+      btn.textContent = "View Less";
+    } else {
+      more.style.display = "none";
+      btn.textContent = "View More";
+    }
+  });
+</script>
 
   <!-- Projects -->
   <section id="projects">
