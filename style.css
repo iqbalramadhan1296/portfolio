@@ -1,4 +1,4 @@
-/* Reset sederhana */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -66,7 +66,7 @@ section h2 {
   color: #16537e;
 }
 
-/* Research section */
+/* Research accordion */
 .research-item {
   margin-bottom: 2rem;
 }
@@ -84,14 +84,41 @@ section h2 {
   color: #555;
 }
 
+/* Hidden by default */
+.research-content {
+  display: none;
+  margin-bottom: 0.8rem;
+}
+
+.research-content.show {
+  display: block;
+}
+
 .research-item ul {
   list-style: disc;
   padding-left: 1.2rem;
 }
 
 .research-item ul li {
-  margin-bottom: 0;  /* rapat */
+  margin-bottom: 0;
   line-height: 1.6;
+}
+
+/* Toggle button */
+.toggle-btn {
+  border: 1px solid #16537e;
+  background: #fff;
+  color: #16537e;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background: #16537e;
+  color: #fff;
 }
 
 /* Footer */
