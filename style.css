@@ -60,41 +60,38 @@ section {
 }
 
 section h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 1.8rem;
   font-weight: 700;
   color: #16537e;
 }
 
-/* Research section list */
-#research ul {
+/* Research section */
+.research-item {
+  margin-bottom: 2rem;
+}
+
+.research-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.research-item h5 {
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.research-item ul {
   list-style: disc;
   padding-left: 1.2rem;
 }
 
-#research ul li {
-  margin-bottom: 0;       /* Hilangkan jarak antar bullet */
-  line-height: 1.6;       /* Rapi tapi tetap enak dibaca */
-}
-
-/* View More button */
-.view-toggle {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  border: 1px solid #0077cc;
-  border-radius: 6px;
-  color: #0077cc;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: all 0.3s ease;
-  background: transparent;
-  cursor: pointer;
-}
-
-.view-toggle:hover {
-  background: #0077cc;
-  color: #fff;
+.research-item ul li {
+  margin-bottom: 0;  /* rapat */
+  line-height: 1.6;
 }
 
 /* Footer */
