@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Iqbal Ramadhan – Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -14,6 +17,7 @@
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -32,7 +36,7 @@
     <p>My name is Iqbal Ramadhan. I am an experienced researcher and writer with over three years of expertise in politics, public policy, and communications. My work spans qualitative research and policy analysis for government agencies, political figures, and private companies.</p>
   </section>
 
-  <!-- Research -->
+  <!-- Research (show 1 item by default) -->
   <section id="research">
     <h2>Research</h2>
 
@@ -47,17 +51,17 @@
       </ul>
     </article>
 
-    <article class="research-item">
-      <h3>Survey on Political Dynamics in Depok ahead of the 2024 Election</h3>
-      <h5><i>Freelance, 2023</i></h5>
-      <ul>
-        <li>Surveyed local political dynamics for DPRD candidates in Depok.</li>
-        <li>Methodology: Online survey and focus group discussion.</li>
-      </ul>
-    </article>
+    <!-- Hidden initially (revealed via single View More) -->
+    <div id="more-research" hidden>
+      <article class="research-item">
+        <h3>Survey on Political Dynamics in Depok ahead of the 2024 Election</h3>
+        <h5><i>Freelance, 2023</i></h5>
+        <ul>
+          <li>Surveyed local political dynamics for DPRD candidates in Depok.</li>
+          <li>Methodology: Online survey and focus group discussion.</li>
+        </ul>
+      </article>
 
-    <!-- Hidden at first -->
-    <div id="more-research" style="display: none;">
       <article class="research-item">
         <h3>Market Survey on Toothpaste Usage Patterns</h3>
         <h5><i>KedaiKOPI Research Agency, 2021</i></h5>
@@ -91,30 +95,112 @@
         <h5><i>KedaiKOPI Research Agency, 2019</i></h5>
         <ul>
           <li>Survey on public opinion about relocating the capital to East Kalimantan.</li>
-          <li>Findings: 39.8% disapproved, 35.6% approved, 24.6% no opinion. In Jakarta, 95.7% disapproved.</li>
+          <li>Methodology: Face-to-face interviews.</li>
+          <li>Findings: 39.8% disapproved, 35.6% approved, 24.6% no opinion; in Jakarta, 95.7% disapproved.</li>
         </ul>
       </article>
     </div>
 
-    <!-- Single toggle button -->
-    <p id="toggle-link" class="toggle-link">View More</p>
+    <!-- Single toggle link -->
+    <p><a href="#" id="toggle-research" class="toggle-link">View More</a></p>
+  </section>
+
+  <!-- Projects (show 1 item by default) -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <!-- Always visible -->
+    <article class="project-item">
+      <h3>Ngopi Bareng Spesial Ramadhan</h3>
+      <h5><i>Producer, KedaiKOPI Research Agency, 2020</i></h5>
+      <ul>
+        <li>Produced an online public discussion series during Ramadan 2020 before iftar, hosted by Sandiaga Uno, Rocky Gerung, and Hendri Satrio, with guest speakers such as Daeng M. Faqih and Prof. Firmanzah.</li>
+        <li>Conducted via Zoom and broadcast live on YouTube and Facebook, attracting over 5,000 viewers.</li>
+        <li>Link: <a href="#">YouTube</a></li>
+      </ul>
+    </article>
+
+    <!-- Hidden initially (revealed via single View More) -->
+    <div id="more-projects" hidden>
+      <article class="project-item">
+        <h3>Ngopi Bareng: Satu Asa Lawan Covid-19</h3>
+        <h5><i>Producer, KedaiKOPI Research Agency, 2020</i></h5>
+        <ul>
+          <li>Produced an online public discussion on the early Covid-19 developments in Indonesia featuring Prof. Amin Soebandrio, Daeng M. Faqih, Agus Wibowo, Sudirman Said, and Ismail Fahmi.</li>
+          <li>Conducted via Zoom and broadcast live on YouTube and Facebook, reaching over 2,000 viewers.</li>
+          <li>Link: <a href="#">YouTube</a></li>
+        </ul>
+      </article>
+
+      <article class="project-item">
+        <h3>Public Lecture by Minister of Foreign Affairs of Malaysia</h3>
+        <h5><i>Project Leader, KedaiKOPI Research Agency, 2019</i></h5>
+        <ul>
+          <li>Led the public lecture by Malaysian Foreign Minister Saifuddin Abdullah at Paramadina University (20 July 2019).</li>
+          <li>Coordinated with the Embassy of Malaysia & Paramadina University; managed event logistics.</li>
+          <li>Held at Nurcholish Madjid Auditorium and broadcast live on YouTube.</li>
+          <li>Link: <a href="#">YouTube</a></li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- Single toggle link -->
+    <p><a href="#" id="toggle-projects" class="toggle-link">View More</a></p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Qualitative Research</li>
+      <li>Policy Analysis</li>
+      <li>Web Design (HTML/CSS)</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:iqbal@example.com">iqbal@example.com</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/iqbal</a></p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Iqbal. All rights reserved.</p>
+    <p>&copy; <span id="y"></span> Iqbal. All rights reserved.</p>
   </footer>
 
-  <!-- Script -->
+  <!-- Scripts -->
   <script>
-    const toggleLink = document.getElementById("toggle-link");
-    const moreResearch = document.getElementById("more-research");
+    // Current year
+    document.getElementById('y').textContent = new Date().getFullYear();
 
-    toggleLink.addEventListener("click", () => {
-      const isHidden = moreResearch.style.display === "none";
-      moreResearch.style.display = isHidden ? "block" : "none";
-      toggleLink.textContent = isHidden ? "View Less" : "View More";
-    });
+    // Helpers
+    const toggleBlock = (linkEl, blockEl) => {
+      linkEl.addEventListener('click', (e) => {
+        e.preventDefault();
+        const isHidden = blockEl.hasAttribute('hidden');
+        if (isHidden) {
+          blockEl.removeAttribute('hidden');
+          linkEl.textContent = 'View Less';
+        } else {
+          blockEl.setAttribute('hidden', '');
+          linkEl.textContent = 'View More';
+        }
+      });
+    };
+
+    // Research toggle (one link for all hidden items)
+    toggleBlock(
+      document.getElementById('toggle-research'),
+      document.getElementById('more-research')
+    );
+
+    // Projects toggle (one link for all hidden items)
+    toggleBlock(
+      document.getElementById('toggle-projects'),
+      document.getElementById('more-projects')
+    );
   </script>
 </body>
 </html>
