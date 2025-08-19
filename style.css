@@ -73,6 +73,12 @@ section h2 {
 #skills ul { list-style: disc; padding-left: 1.2rem; }
 #skills li { margin: 0.18rem 0; }
 
+/* Contact section */
+#contact p {
+  margin: 4px 0; /* bikin rapat antara Email & LinkedIn */
+  line-height: 1.5;
+}
+
 /* Footer */
 footer {
   text-align: center;
